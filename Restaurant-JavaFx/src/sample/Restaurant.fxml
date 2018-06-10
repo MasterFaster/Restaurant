@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox prefHeight="599.0" prefWidth="822.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RestaurantController">
+   <children>
+      <VBox prefHeight="613.0" prefWidth="327.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addHuman" text="Add Human" />
+            <Button mnemonicParsing="false" onAction="#showClientsWithOrder" text="Show clients with order" />
+            <Button mnemonicParsing="false" onAction="#mealsIntroductionWindow" text="See or Remove meals in window" />
+            <Button mnemonicParsing="false" onAction="#addMeal" text="Add Meal" />
+            <Button mnemonicParsing="false" onAction="#deliverersIntroductionWindow" text="See or Remove deliverers in window" />
+            <Button mnemonicParsing="false" onAction="#clientsIntroductionWindow" text="See or Remove clients in window" />
+            <Button mnemonicParsing="false" onAction="#takeOrder" text="Take Order" />
+            <HBox alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#save" text="Save" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="140.0" prefWidth="272.0">
+               <children>
+                  <ImageView fx:id="clientImageView" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Text fx:id="clientCountText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="140.0" prefWidth="272.0">
+               <children>
+                  <ImageView fx:id="delivererImageView" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Text fx:id="delivererCountText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="172.0" prefWidth="222.0">
+               <children>
+                  <ImageView fx:id="moneyImageView" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                     <effect>
+                        <Reflection />
+                     </effect>
+                  </ImageView>
+                  <Text fx:id="moneyCountText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Canvas fx:id="mapCanvas" height="600.0" width="600.0">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <effect>
+            <DropShadow height="34.84" radius="15.4375" width="28.91" />
+         </effect>
+      </Canvas>
+   </children>
+</HBox>

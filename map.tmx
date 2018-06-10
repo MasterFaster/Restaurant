@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="Bez tytułu" tilewidth="16" tileheight="16" spacing="2" margin="1" tilecount="5088" columns="106">
+  <image source="Bez tytułu.png" width="1914" height="867"/>
+ </tileset>
+ <layer name="Warstwa Kafelków 1" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztmGEOgyAMhbvLuV2JnWrzSniQYbImrAEsyKTP+KNJf5gn5eO1ynQjuod4hJgSuSOiJ5Wf0eS9dHL5K8Q7xJzJ+f2lZzT5qsNae3Ry+VH76Om3FlQe87cWT301j+aRYrPqIvKQbFgblQfn0jN7+2FpX7Z4ONJFTl96ppWHV64jF74QjvT6kk3N/rA/SmvRxFLY66VBj9enffdof/T0zah+VXPeNb6xyIPz+JxtsbHKo5aNZR6SjexRaDw4T50zNB45Nto+YIlHiQ0ijxQbVB6SDToPxH6FOs8vHheP0fkZeJxhfvA/MTKP+H4AlUdcwwLKQ9aA1q/kXVN8T4PCI8UAbX7kGCDND1kD2jyPvZBjYJ2HloFlHrIGxO+r2tlmlUdcA+r3buxp1P+Pmr5kmUerJyzxcDs8YYVHy5ywyKNlTljj4Tp4YjQPzfcrAo9enqjh0ev8/lvzA/oF9X0=
+  </data>
+ </layer>
+</map>

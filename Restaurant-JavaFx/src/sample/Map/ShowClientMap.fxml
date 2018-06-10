@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="280.0" prefWidth="400.0" style="-fx-border-color: #2f4f4f; -fx-border-width: 5.0;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Map.ShowClientMapController">
+   <children>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0">
+         <content>
+            <Text fx:id="clientIntroductionText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+         </content>
+      </ScrollPane>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="393.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#removeClient" text="Remove" />
+            <Button mnemonicParsing="false" onAction="#cancelClientInfoView" text="Cancel">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="returnButton" mnemonicParsing="false" onAction="#returnDeliverer" text="Return">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="59.0" prefWidth="393.0">
+         <children>
+            <Label fx:id="fuelLabel" text="Fuel" />
+            <ProgressBar fx:id="fuelProgressBar" prefWidth="200.0" progress="0.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </ProgressBar>
+            <Button fx:id="refreshButton" mnemonicParsing="false" onAction="#refresh" text="Refresh">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

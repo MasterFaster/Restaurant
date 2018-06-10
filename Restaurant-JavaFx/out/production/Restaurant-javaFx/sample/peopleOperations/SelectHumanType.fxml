@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.peopleOperations.SelectHumanTypeController">
+   <children>
+      <RadioButton fx:id="occasionalClientRadioBtn" mnemonicParsing="false" selected="true" text="Occasional Client">
+         <toggleGroup>
+            <ToggleGroup fx:id="clientGroup" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="regularClientRadioBtn" mnemonicParsing="false" text="Regular Client" toggleGroup="$clientGroup" />
+      <RadioButton fx:id="companyClientRadioBtn" mnemonicParsing="false" text="Comapany Client" toggleGroup="$clientGroup" />
+      <RadioButton fx:id="delivererRadioBtn" mnemonicParsing="false" text="Deliverer" toggleGroup="$clientGroup" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#addHuman" text="Next" />
+            <Button fx:id="cancelAddHumanBtn" mnemonicParsing="false" onAction="#cancelAdding" text="Cancel" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
